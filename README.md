@@ -192,22 +192,41 @@ Key takeaways include:
 
 ## Repository Structure
 
+```text
+volt-typhoon-forensic-investigation/
 ├── screenshots/
 ├── report/
 ├── presentation/
 └── README.md
+```
 
 ## Project Outcome
 
-Successfully reconstructed the full attack lifecycle of a simulated Volt Typhoon intrusion using Splunk log analysis.
+Successfully reconstructed the complete attack lifecycle of a simulated Volt Typhoon intrusion using Splunk log analysis and forensic investigation techniques.
 
-Identified attacker persistence mechanisms, credential theft activity, lateral movement, data collection, command-and-control setup, and defense evasion techniques while mapping findings to the MITRE ATT&CK framework.
+The investigation identified attacker persistence mechanisms, credential theft activities, lateral movement, data collection, command-and-control communications, and defense evasion techniques while mapping findings to the MITRE ATT&CK framework.
 
+## Deliverables
+
+- Investigation Report (PDF)
+- Presentation Slides (PPTX)
+- Splunk Investigation Screenshots
+- MITRE ATT&CK Mapping
+- Attack Timeline Reconstruction
+  
 ## Author
 
 **Suganthi THAMILVANAN**
+
+Cybersecurity Student passionate about Threat Hunting, Digital Forensics, Incident Response, and SOC Operations.
+
+GitHub: https://github.com/Suga-thamil
 
 ## Conclusion
 
 This investigation provided hands-on experience in threat hunting, incident response, and forensic analysis using Splunk. By reconstructing the attacker timeline and mapping activities to MITRE ATT&CK, the project demonstrated how advanced threat actors can leverage legitimate administrative tools to evade detection and maintain persistence.
 Cybersecurity Student | Threat Hunting | Digital Forensics | SOC Analysis
+
+---
+
+This project was created for educational and portfolio purposes as part of a cybersecurity threat hunting and incident response exercise.
