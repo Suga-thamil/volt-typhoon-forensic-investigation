@@ -1,1 +1,29 @@
+# Presentation
+
+This folder contains the presentation slides used to present the findings of the Volt Typhoon forensic investigation.
+
+## Contents
+
+* **Volt_Typhoon_Forensic_Investigation.pptx** – Final presentation deck summarizing the attack timeline, investigation process, key findings, MITRE ATT&CK mapping, and incident response observations.
+
+## Presentation Topics
+
+The presentation covers:
+
+1. Initial Access
+2. Persistence
+3. Execution
+4. Credential Access
+5. Discovery
+6. Lateral Movement
+7. Collection
+8. Command and Control (C2)
+9. Defense Evasion
+10. Cleanup
+11. MITRE ATT&CK Mapping
+12. Key Lessons Learned
+
+## Purpose
+
+The presentation was created as part of a cybersecurity threat hunting and incident response exercise to demonstrate investigation methodology, log analysis, and attack reconstruction using Splunk.
 
