@@ -1,5 +1,7 @@
 # Volt Typhoon Forensic Investigation
 
+Threat Hunting • Incident Response • Splunk Analysis • MITRE ATT&CK Mapping
+
 ## Overview
 
 This project documents a forensic investigation of a simulated Volt Typhoon intrusion using Splunk.
@@ -54,7 +56,7 @@ This project was completed as part of a cybersecurity threat hunting and inciden
 
 ## Investigation Summary
 
-The investigation revealed a complete attack chain consistent with known Volt Typhoon tradecraft.
+The investigation revealed a complete attack chain consistent with techniques publicly associated with Volt Typhoon operations.
 
 The attacker first compromised an administrator account and established persistence through the creation of a new privileged account.
 
@@ -81,6 +83,31 @@ The attacker later moved laterally, collected financial records, established com
 
 ---
 
+## ATT&CK Coverage
+
+| Tactic | Technique |
+|----------|----------|
+| Persistence | Create Account |
+| Discovery | WMIC Enumeration |
+| Credential Access | Credential Dumping |
+| Collection | Data Staging |
+| Command and Control | Proxy |
+| Defense Evasion | Indicator Removal |
+
+## Attack Timeline
+
+1. Initial Access
+2. Account Takeover
+3. Persistence Established
+4. Reconnaissance
+5. Credential Access
+6. Web Shell Deployment
+7. Lateral Movement
+8. Data Collection
+9. Command & Control
+10. Defense Evasion
+11. Cleanup
+    
 ## Key Findings
 
 ### Initial Access
@@ -123,42 +150,31 @@ The attacker later moved laterally, collected financial records, established com
 ## Screenshots
 
 ### Initial Access
+![Initial Access](screenshots/01-initial-access.png)
 
-Screenshot showing unauthorized password change activity.
+### Persistence – Rogue Admin Account
+![Persistence](screenshots/02-rogue-admin-account.png)
 
-### Persistence
+### Discovery – WMIC Reconnaissance
+![WMIC](screenshots/03-wmic-reconnaissance.png)
 
-Screenshot showing creation of the **voltyp-admin** account.
+### Credential Access – NTDS Extraction
+![NTDS](screenshots/04-ntds-dump.png)
 
-### Reconnaissance
-
-Screenshot showing WMIC enumeration commands.
-
-### Credential Access
-
-Screenshot showing NTDS database extraction.
-
-### Credential Theft
-
-Screenshot showing decoded Mimikatz PowerShell command.
+### Credential Theft – Mimikatz
+![Mimikatz](screenshots/05-mimikatz-download.png)
 
 ### Web Shell Deployment
+![Webshell](screenshots/06-webshell-deployment.png)
 
-Screenshot showing creation of the ASPX web shell.
-
-### Defense Evasion
-
-Screenshot showing event log clearing activity.
+### Defense Evasion – Log Clearing
+![Logs](screenshots/07-log-clearing.png)
 
 ### Lateral Movement
-
-Screenshot showing transfer of the web shell to a secondary server.
+![Lateral Movement](screenshots/08-lateral-movement.png)
 
 ### Data Collection
-
-Screenshot showing collection of financial CSV files.
-
----
+![Collection](screenshots/09-data-collection.png)
 
 ## Lessons Learned
 
@@ -174,8 +190,24 @@ Key takeaways include:
 
 ---
 
+## Repository Structure
+
+├── screenshots/
+├── report/
+├── presentation/
+└── README.md
+
+## Project Outcome
+
+Successfully reconstructed the full attack lifecycle of a simulated Volt Typhoon intrusion using Splunk log analysis.
+
+Identified attacker persistence mechanisms, credential theft activity, lateral movement, data collection, command-and-control setup, and defense evasion techniques while mapping findings to the MITRE ATT&CK framework.
+
 ## Author
 
 **Suganthi THAMILVANAN**
 
+## Conclusion
+
+This investigation provided hands-on experience in threat hunting, incident response, and forensic analysis using Splunk. By reconstructing the attacker timeline and mapping activities to MITRE ATT&CK, the project demonstrated how advanced threat actors can leverage legitimate administrative tools to evade detection and maintain persistence.
 Cybersecurity Student | Threat Hunting | Digital Forensics | SOC Analysis
