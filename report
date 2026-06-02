@@ -1,1 +1,42 @@
+# Investigation Report
+
+This folder contains the formal report produced during the Volt Typhoon forensic investigation.
+
+## Contents
+
+* **Volt_Typhoon_Investigation_Report.pdf** – Comprehensive investigation report documenting the attack timeline, evidence collected, attacker techniques, and incident response findings.
+
+## Report Scope
+
+The report covers:
+
+* Initial Access
+* Persistence
+* Execution
+* Credential Access
+* Discovery
+* Lateral Movement
+* Collection
+* Command and Control (C2)
+* Defense Evasion
+* Cleanup
+
+## Key Investigation Activities
+
+* Analysis of Windows Event Logs
+* Splunk Log Investigation
+* Threat Hunting
+* PowerShell Command Analysis
+* Credential Theft Detection
+* Web Shell Identification
+* MITRE ATT&CK Mapping
+* Attack Timeline Reconstruction
+
+## Outcome
+
+The investigation successfully reconstructed the complete attack lifecycle of a simulated Volt Typhoon intrusion and identified multiple attacker techniques used to maintain persistence, harvest credentials, move laterally, collect sensitive data, and evade detection.
+
+## Purpose
+
+This report was created as part of a cybersecurity threat hunting and incident response exercise and serves as documentation of the investigative process and findings.
 
